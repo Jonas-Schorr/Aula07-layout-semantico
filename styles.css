@@ -13,23 +13,21 @@ body{
     width: 90%;
     height: auto;
     background-color: gray;
-    text-align: center;
 }
 
 #content{
     width: 90%;
-    background-color: darkkhaki;
     display: flex;
+    margin: 10px 0;
 
 }
-
-
 
 #main-footer{
     background-color: coral;
     align-items: center;
     width: 90%;
 }
+
 #content>nav{
     margin-right: 10px;
     background-color: rgb(223, 160, 137);
@@ -46,4 +44,60 @@ body{
 }
 #content>article{
     width: 85%;
+}
+.article-item{
+    display: flex;
+    align-items: center;
+    background-color: darkkhaki;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.article-item:last-child{
+    margin-bottom: 0;
+}
+.image{
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    margin: 0;
+ }
+.article-detail{
+    width: 80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.article-detail>header{
+    font-weight: 600;
+    font-size: 22;
+    margin-top: 5px;
+}
+.article-detail>footer{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+}
+#main-header{
+    display: flex;
+    justify-content: center;
+    color: rgb(243, 208, 8);
+    align-items: center;
+}
+#main-header>span{
+    display: flex;
+    flex-direction: center;
+    color: gold;
+    fill: currentColor;
+    margin-right: 10px;    
+}
+
+#main-header>span>svg{
+    width: 50px;
+    height: 50px;
+}
+#main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:gold;
 }
